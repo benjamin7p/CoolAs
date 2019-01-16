@@ -15,6 +15,9 @@
 		9ABD50E921EE47F8002B1302 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ABD50E721EE47F8002B1302 /* LaunchScreen.storyboard */; };
 		9ABD50F421EE47F8002B1302 /* CoolAsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABD50F321EE47F8002B1302 /* CoolAsTests.swift */; };
 		9ABD50FF21EE47F8002B1302 /* CoolAsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABD50FE21EE47F8002B1302 /* CoolAsUITests.swift */; };
+		9ABD511021EE534C002B1302 /* PersonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABD510F21EE534C002B1302 /* PersonManager.swift */; };
+		9ABD511221EE59CF002B1302 /* PersonListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABD511121EE59CF002B1302 /* PersonListTableViewController.swift */; };
+		9ABD511421EE5A00002B1302 /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABD511321EE5A00002B1302 /* PersonDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		9ABD50FA21EE47F8002B1302 /* CoolAsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoolAsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ABD50FE21EE47F8002B1302 /* CoolAsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolAsUITests.swift; sourceTree = "<group>"; };
 		9ABD510021EE47F8002B1302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9ABD510F21EE534C002B1302 /* PersonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonManager.swift; sourceTree = "<group>"; };
+		9ABD511121EE59CF002B1302 /* PersonListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListTableViewController.swift; sourceTree = "<group>"; };
+		9ABD511321EE5A00002B1302 /* PersonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +106,12 @@
 			isa = PBXGroup;
 			children = (
 				9ABD50DB21EE47F5002B1302 /* AppDelegate.swift */,
+				9ABD510C21EE4F1E002B1302 /* Model */,
 				9ABD50DD21EE47F5002B1302 /* ViewController.swift */,
-				9ABD50DF21EE47F5002B1302 /* Main.storyboard */,
+				9ABD510D21EE4F35002B1302 /* View */,
+				9ABD510E21EE4F4F002B1302 /* Controllers */,
 				9ABD50E521EE47F8002B1302 /* Assets.xcassets */,
-				9ABD50E721EE47F8002B1302 /* LaunchScreen.storyboard */,
 				9ABD50EA21EE47F8002B1302 /* Info.plist */,
-				9ABD50E221EE47F5002B1302 /* CoolAs.xcdatamodeld */,
 			);
 			path = CoolAs;
 			sourceTree = "<group>";
@@ -126,6 +132,33 @@
 				9ABD510021EE47F8002B1302 /* Info.plist */,
 			);
 			path = CoolAsUITests;
+			sourceTree = "<group>";
+		};
+		9ABD510C21EE4F1E002B1302 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9ABD50E221EE47F5002B1302 /* CoolAs.xcdatamodeld */,
+				9ABD510F21EE534C002B1302 /* PersonManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9ABD510D21EE4F35002B1302 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9ABD511121EE59CF002B1302 /* PersonListTableViewController.swift */,
+				9ABD511321EE5A00002B1302 /* PersonDetailViewController.swift */,
+				9ABD50DF21EE47F5002B1302 /* Main.storyboard */,
+				9ABD50E721EE47F8002B1302 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9ABD510E21EE4F4F002B1302 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +292,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ABD511021EE534C002B1302 /* PersonManager.swift in Sources */,
+				9ABD511221EE59CF002B1302 /* PersonListTableViewController.swift in Sources */,
+				9ABD511421EE5A00002B1302 /* PersonDetailViewController.swift in Sources */,
 				9ABD50DE21EE47F5002B1302 /* ViewController.swift in Sources */,
 				9ABD50DC21EE47F5002B1302 /* AppDelegate.swift in Sources */,
 				9ABD50E421EE47F5002B1302 /* CoolAs.xcdatamodeld in Sources */,
